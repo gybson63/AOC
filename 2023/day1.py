@@ -17,11 +17,7 @@ def delete_letters(s : str)->str:
 def score_lines(lines)->int:
     result = 0
     for line in lines:
-        if len(line)==1:
-            num = line[0]+line[0]
-        else:
-            num = line[0]+line[-1]
-        result += int(num)
+        result += int(line[0]+line[-1])
     return result
 
 #
